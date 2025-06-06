@@ -1,13 +1,9 @@
 # Observability
-This folder consists of starter python code that DataRobot users can use to enable observability in popular LLMs. Below are the LLMs for which code is available/WIP. Feel free to request the ones you are using if they are not in the below list.
+This folder consists of starter python code that DataRobot users can use to enable observability for external models. Say for instance, you have a agentic workflow or LLM appliction already running. Using our external observability you can leverage DataRobot to monitor that model with a simple decorator. 
 
-* PaLM 2 by Google: <a href='palm2_observability_starter.ipynb'>Ready</a>
-* GPT4 by OpenAI: <a href='gpt_observability_starter.ipynb'>Ready</a>
-* Titan by AWS Bedrock: <a href='bedrock_titan_observability_starter.ipynb'>Ready</a>
-* Claude by Anthropic: <a href='anthropic_claude_observability_starter.ipynb'>Ready</a>
-* Huggingface: <a href='huggingface_observability_starter.ipynb'>Ready</a>
-* LLMChain: <a href='llmchain_observability.ipynb'>Ready</a>
-* MPT-7B-Instruct by Mosaic: WIP
-* Llama 2 by Meta: WIP
-* StableLM by Stability.ai: WIP 
-* Cohere: WIP
+
+
+## Monitoring Decorator
+
+The included "monitoring.py" is a python decorator that wraps the [DataRobot Monitoring Agent](https://docs.datarobot.com/en/docs/mlops/deployment/mlops-agent/monitoring-agent/index.html#monitoring-agent) using it to report the prompt and response of our generative application. You can lift that file at drop it directly in your workflow. 
+

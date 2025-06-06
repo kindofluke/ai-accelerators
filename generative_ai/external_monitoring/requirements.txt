@@ -1,0 +1,5 @@
+ datarobot==3.7.1
+ datarobot-mlops==11.0.0
+ openai
+ ipywidgets
+ llama-index-llms-openai
